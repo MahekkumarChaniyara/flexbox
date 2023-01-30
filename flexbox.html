@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>FlexBox</title>
+    <style>
+        body{
+            margin:0;
+            padding:0;
+        }
+        header ul{
+            margin:0;
+            padding: 0;
+        }
+        header h1{
+            margin:5px 0 0 0 ;
+        }
+        header{
+            display:flex;
+            justify-content: space-between;
+            background-color:grey;
+            width:100%;
+        }
+        .services ul{
+            display:flex;
+            list-style:none;
+
+        }
+        .services a{
+            text-decoration:none;
+            border:1px solid black;
+            padding: 10px;
+            display: inline-block;
+            margin:5px;
+            color:white;
+            background-color:#00b7ae;
+        }
+        .services a:hover{
+            background-color:white;
+            color:black
+            
+        }
+        .services li{
+           
+            
+        }
+        .social ul{
+            display:flex;
+            list-style:none;
+
+        }
+        .social a{
+            text-decoration:none;
+            border:1px solid black;
+            padding: 10px;
+            display: inline-block;
+            margin:5px;
+            color:white;
+            background-color:#00b7ae;
+        }
+        .social a:hover{
+            background-color:white;
+            color:black
+            
+        }
+        .social li{
+           
+            
+        }
+        #main{
+            display:flex;
+
+        }
+        aside{
+            flex:0 0 20vw;
+            background-color:#fbffba;
+        }
+        aside ul{
+            margin:0;
+            list-style:none;
+            padding:0;
+           
+        }
+        aside a{
+            display:block;
+            text-decoration:none;
+            border-bottom:1px solid black;
+        }
+        aside li{
+            margin:10px;
+            
+        }
+        .service-container{
+            display:flex;
+
+            
+        }
+        .service-box{
+            border:1px solid black;
+            margin:10px;
+            flex-basis:32%;
+            padding:10px;
+            display:flex;
+            flex-direction:column;
+        }
+        .service-box img{
+            width:100%;
+        }
+        /* .button{
+            border:1px solid black;
+            display:inline-block;
+            padding:10px;
+            background-color:grey;
+
+        } */
+        .button{
+            margin-top:auto;
+        }
+        .button a{
+            text-decoration:none;
+            color:white;
+            display:inline-block;
+            border:1px solid black;
+            padding:10px;
+            background-color:grey;
+            
+        }
+        .button a:hover{
+            background-color:white;
+            color:black;
+        }
+        .content{
+            margin-left:10px;
+        }
+        .content h2{
+            margin:0;
+            margin-bottom:5px;
+            
+        }
+        .content p{
+            margin:0;
+            margin-bottom:5px;
+        }
+        .content{
+            padding:5px;
+        }
+        .last{
+            background-color:grey;
+            text-align:center;
+           
+        }
+        .last p{
+            margin:0;
+            font-size:25px;
+            color:white;
+        }
+        @media screen and (max-width:360px){
+            #main{
+                flex-direction:column;
+            }
+            aside{
+                order:1;
+            }
+            .service-box{
+                flex-basis:100%;
+            }
+        }
+        @media screen and (max-width:500px){
+            #main{
+                flex-direction:column;
+            }
+            aside{
+                order:1;
+            }
+            .service-box{
+                flex-basis:100%;
+            }
+        }
+
+
+        @media screen and (max-width:700px) {
+            header{
+                flex-direction:column;
+                align-items:center;
+            }
+            .logo{
+                order:-1;
+            }
+            .service-container{
+                flex-wrap:wrap;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <div class="services">
+            <ul>
+                <li><a href="">Home</a></li>
+                <li><a href="">Contect</a></li>
+                <li><a href="">Service</a></li>
+            </ul>
+        </div>
+        <div class="logo">
+            <h1>Maruti Techlab</h1>
+        </div>
+        <div class="social">
+            <ul>
+                <li><a href="">facebook</a></li>
+                <li><a href="">google</a></li>
+                <li><a href="">linkedin</a></li>
+            </ul>
+
+    </header>
+    <div id="main">
+        <aside class="">
+            <ul>
+                <li><a href="">Some Item</a></li>
+                <li><a href="">Some Item</a></li>
+                <li><a href="">Some Item</a></li>
+                <li><a href="">Some Item</a></li>
+                <li><a href="">Some Item</a></li>
+            </ul>
+        </aside>
+        <article class="content">
+            <h2>Welcome to our website</h2>
+            <p>Lorem ipsum dolor, sit amet consectetur adipisicing elit. Soluta enim eos architecto et ex, asperiores, magni molestiae illum veritatis nesciunt a doloribus! Illo exercitationem consequuntur tempora voluptatum aperiam, repudiandae vel eveniet corporis. Architecto enim molestiae quo voluptatibus veritatis vero similique iusto rem? In similique autem esse dolorum repellendus minima itaque libero, odio perferendis perspiciatis id adipisci ipsa distinctio, nostrum, quod quia hic nulla laboriosam modi aspernatur? Provident inventore necessitatibus nesciunt dolore dicta iure, vel recusandae voluptatibus ullam? Veniam dolorum neque voluptas et commodi, dicta voluptatum deserunt iusto beatae, facilis temporibus accusantium ab, amet libero id debitis molestias optio harum! A! Lorem ipsum dolor, sit amet consectetur adipisicing elit. Voluptate, corporis labore pariatur sapiente incidunt libero quos esse, obcaecati laudantium tempora cum veniam officiis nesciunt facere architecto magni doloremque, exercitationem distinctio. Quis distinctio error, at, in consectetur, illum commodi ipsam magni est eum doloremque alias. Rerum nulla voluptates ratione in ducimus repudiandae saepe excepturi tenetur perspiciatis porro error libero alias culpa minus quis, iure consectetur sint explicabo, molestias nobis! Eveniet inventore, cum dolorum nam, dolorem eum iusto laborum praesentium maxime ullam natus ex ea, quam necessitatibus asperiores rem atque corporis a pariatur sint commodi nulla! Eaque neque ad sed blanditiis praesentium!
+            </p>
+            <h2>Our Services</h2>
+            <div class="service-container">
+                <div class=service-box>
+                    <div class="image">
+                        <img src="alesia-kazantceva-VWcPlbHglYc-unsplash.jpg"></img>
+                    </div>
+                    <div class="service-title">
+                        <h3>web developmet</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quod! Lorem ipsum dolor sit, amet consectetur adipisicing elit. </p>
+                    </div>
+                    <div class="button">
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+                <div class=service-box>
+                    <div class="image">
+                        <img src="israel-andrade-YI_9SivVt_s-unsplash.jpg"></img>
+                    </div>
+                    <div class="service-title">
+                        <h3>web developmet</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quod!</p>
+                    </div>
+                    <div class="button">
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+                <div class=service-box>
+                    <div class="image">
+                        <img src="nastuh-abootalebi-eHD8Y1Znfpk-unsplash.jpg"></img>
+                    </div>
+                    <div class="service-title">
+                        <h3>web developmet</h3>
+                    </div>
+                    <div class="service-desc">
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Hic, quod!</p>
+                    </div>
+                    <div class="button">
+                        <a href="">Read more</a>
+                    </div>
+                </div>
+            </div>
+        </artical>
+    </div>
+    <footer class="last">
+        <p>Lorem ipsum dolor sit amet.</p>
+    </footer> 
+</body>
+</html>
